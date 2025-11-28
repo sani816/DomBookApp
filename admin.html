@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin page</title>
+    <link rel="stylesheet" href="/styles/admin.css">
+</head>
+<body>
+    <h1>Welcome to admin page</h1>
+    <button onclick="window.location.href='index.html'" id="indexbtn">Go To Home Page</button>
+   <div class="form">
+        <lable class="lable">Title:</lable><br>
+        <input type="text" id="title" placeholder="Enter book title name" required><br><br>
+        <lable class="lable">Auther:</lable><br>
+        <input type="text" id="auther" placeholder="Enter auther name" required><br><br>
+        <lable class="category">Category:</lable><br>
+        <select id="category">
+            <option value="fiction">Fiction</option>
+            <option value="comedy">Comedy</option>
+            <option value="technical">Technical</option>
+        </select><br> 
+       <button onclick="addBook()" id="addBook">Add Book</button>
+    </div>
+
+    <button onclick="shortAZ()" class="shortbtnA">Short A->Z</button>
+    <button onclick="shortZA()" class="shortbtnZ">Short Z->A</button>
+    <select  onchange="filterBook()" id="filterCategory">
+        <option value="all">All</option>
+        <option value="fiction">Fiction</option>
+        <option value="comedy">Comedy</option>
+        <option value="technical">Technical</option>
+    </select>
+   <!--book display-->
+    <div id="booksContainer"></div>
+
+
+  <script src="script.js"></script>  
+</body>
+</html>
