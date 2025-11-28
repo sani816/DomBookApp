@@ -1,0 +1,128 @@
+*{
+    background-color: cadetblue;
+}
+h1{
+    color: blue;
+    font-weight: bolder;
+    text-align: center;
+}
+#indexbtn{
+    background-color: burlywood;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 680px;
+}
+.lable{
+    color:red;
+    margin-left: 160px;
+    font-weight: bolder;
+}
+.category{
+    color: red;
+    font-weight: bolder;
+    margin-left: 150px;
+}
+.form{
+    height: 260px;
+    width: 400px;
+    border-radius:20px;
+    box-shadow:0px 1px 7px black;
+    padding: 10px;
+    margin-left: 530px;
+    margin-top: 30px;
+}
+#title{
+    width: 300px;
+    margin-left: 45px;
+    background-color: bisque;
+    border: 2px solid black;
+    font-weight: bolder;
+}
+#auther{
+    width: 300px;
+    margin-left: 45px;
+    background-color: bisque;
+    border: 2px solid black;
+    font-weight: bolder;
+}
+#category{
+    width: 300px;
+    margin-left: 45px;
+    background-color: bisque;
+    padding: 2px;
+    border: 2px solid black;
+    font-weight: bolder;
+}
+#addBook{
+    background-color: rgb(24, 111, 82);
+    border-radius:9px;
+    padding:8px;
+    width: 100px;
+    font-weight: bolder;
+    margin-left: 140px;
+    margin-top: 20px;
+}
+.shortbtnA{
+     margin-left: 540px;
+    margin-top: 30px;
+    border-radius:3px;
+    font-weight: bolder;
+    background-color: bisque;
+}
+.shortbtnZ{
+    margin-left:10px;
+    margin-top: 30px;
+    border-radius:3px;
+    font-weight: bolder;
+    background-color: bisque;
+}
+#filterCategory{
+    background-color: bisque;
+    margin-left: 30px;
+     border-radius:3px;
+    font-weight: bolder;
+    width: 100px;
+    padding:2px;
+}
+option{
+    background-color: bisque;
+    font-weight: bolder;
+}
+
+#booksContainer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 20px;
+    height:250px;
+    width:100%;
+    margin-top: 20px;
+} 
+.card{
+     background-color:beige;
+     padding: 15px;
+     border-radius: 12px;
+     text-align: center;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.deleteBtn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+   .deleteBtn:hover {
+            background: darkred;
+        }
+
+ .card img {
+            width:300px;
+            height: 190px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
